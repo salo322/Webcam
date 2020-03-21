@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webcam  Options</title>
+</head>
+<style>
+    body {
+        margin: 20px;
+        background: #aaaaaa;
+       
+    }
+    .container {
+        background: white;
+        width: 700px;
+        margin:auto;
+        padding: 60px 20px;
+    }
+    .select {
+        margin-top: 2px;
+        background: #FFF;
+        padding: 10px 30px 10px 10px;
+        font-size: 14px;
+        border:2px solid #ccc;
+    }
+    .section {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .status {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .btn {
+        background: #78aacb;
+        color: #fff;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        display: inline-block;
+        border: 0;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="container-title">Webcam Options</div>
+        <br>
+        <div class="section">
+            
+           Shape: <select class="select" id="shape">
+                <option value="oval" selected="selected">Oval</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+            </select>
+        </div>
+        <div class="section">
+          Position:  <select class="select" id="position">
+                <option value="leftBottom" selected="selected">Left Bottom</option>
+                <option value="rightBottom">Right Bottom</option>
+                <option value="rightTop">Right Top</option>
+                <option value="leftTop">Left Top</option>
+            </select>
+        </div>
+        <div class="section">
+            <div>
+                <input type="checkbox" id="mirror" checked="checked"> Mirror mode
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <input type="checkbox" id="track-Tabs" checked="checked"> Track Tabs
+            </div>
+        </div>
+        <div class="section">
+            <div>
+                <input type="checkbox" id="Presentation" checked="checked"> Track Full Screen Presentation
+            </div>
+        </div>
+        <div>
+            <button class="btn"  id="save">Save</button>
+          
+        </div>
+    </div>
+    <script src="./scripts/options.js">
+    </script>
+</body>
+</html>

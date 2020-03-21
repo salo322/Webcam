@@ -1,0 +1,28 @@
+video{
+  position:fixed;
+  z-index: 500500500;
+}
+
+#videoElement {
+ right: 30px;
+ top: 70px;
+ width: 220px;
+ height: auto;
+
+}
+
+
+  .circle{
+   transform: scaleX(-1);
+   overflow: hidden;
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+  }
+  .square{
+   transform: scaleX(-1);
+   overflow: hidden;
+   width: 180px;
+   height: 180px;
+   border-radius: 0px;
+  }

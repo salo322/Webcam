@@ -1,0 +1,39 @@
+{
+    "name": "Webcam extension",
+    "description" : "webcam extension",
+    "version": "1.0",
+  
+    "options_page": "options.html",
+    
+    "icons":{
+        "128":"./images/webcam.png",
+        "48":"./images/webcam.png",
+        "16":"./images/webcam.png"
+    },
+
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "./images/webcam.png"
+    
+    },
+
+    "permissions": ["<all_urls>", "activeTab", "tabs", "storage", "http://*/",
+      "https://*/",  "contentSettings" ],
+
+    "background": {
+        "persistent": false,
+        
+        "scripts":["./scripts/background.js"]
+        
+      },
+
+    "content_scripts": [
+        {
+          "run_at": "document_end",
+          "matches": ["<all_urls>"],
+          "css":        ["content.css"],
+          "js": ["./scripts/jquery.js"]
+        }
+      ]
+  
+}
